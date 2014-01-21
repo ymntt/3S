@@ -1,5 +1,6 @@
 /*
   いくつかのファイルが必要になります
+  File name : 	dl_list.h
 */
 struct node{
 	struct node *prev;

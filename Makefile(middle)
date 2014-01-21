@@ -1,0 +1,87 @@
+# Makefile
+# This is Middle test ver.
+
+all: testa testb testc testd teste testf testg testh testi testj
+test: 1 2 3 4 5 6 7 8 9 10
+testa: 1.c
+	gcc -o test1 1.c
+
+testb: 2.c
+	gcc -o test2 2.c
+
+testc: 3.c
+	gcc -o test3 3.c
+
+testd: 4.c
+	gcc -o test4 4.c
+
+teste: 5.c
+	gcc -o test5 5.c
+
+testf: 6.c
+	gcc -o test6 6.c
+
+testg: 7.c
+	gcc -o test7 7.c
+
+testh: 8.c
+	gcc -o test8 8.c
+
+testi: 9.c
+	gcc -o test9 9.c
+
+testj: 10.c
+	gcc -o test10 10.c
+
+clean:
+	rm -f 1.o 2.o 3.o 4.o 5.o 6.o 7.o 8.o 9.o 10.o
+	rm -f 1.c~ 2.c~ 3.c~ 4.c~ 5.c~ 6.c~ 7.c~ 8.c~ 9.c~ 10.c~
+1:1.c
+	echo "";echo "";echo "*************  01 *************"
+	cat 1.c
+	./test1
+
+2:2.c
+	echo "";echo "";echo "*************  02 *************"
+	cat 2.c
+	./test2
+
+3:3.c
+	echo "";echo "";echo "*************  03 *************"
+	cat 3.c
+	./test3
+
+4:4.c
+	echo "";echo "";echo "*************  04 *************"
+	cat 4.c
+	./test4
+
+5:5.c
+	echo "";echo "";echo "*************  05 *************"
+	cat 5.c
+	./test5
+
+6:6.c
+	echo "";echo "";echo "*************  06 *************"
+	cat 6.c
+	./test6 Hello World From Chiba
+
+7:7.c
+	echo "";echo "";echo "*************  07 *************"
+	cat 7.c
+	./test7
+
+8:8.c
+	echo "";echo "";echo "*************  08 *************"
+	cat 8.c
+	./test8
+
+9:9.c
+	echo "";echo "";echo "*************  09 *************"
+	cat 9.c
+	./test9
+
+10:10.c
+	echo "";echo "";echo "*************  10 *************"
+	cat 10.c
+	./test10
